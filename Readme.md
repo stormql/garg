@@ -34,7 +34,8 @@ const httpLink = new HttpLink({
 });
 ```
 
-Be sure and add this line of code to your .gitignore file
+Be sure and add this line of code to your .gitignore file so that your
+github auth token does not get checked into Github.
 
 ```
 src/data
