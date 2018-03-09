@@ -6,6 +6,7 @@ import { ApolloLink } from "apollo-link";
 import { HttpLink } from "apollo-link-http";
 import { InMemoryCache } from "apollo-cache-inmemory";
 import { onError } from "apollo-link-error";
+import { key } from "./data/f1.js";
 
 import "./style.css";
 
@@ -15,7 +16,7 @@ import registerServiceWorker from "./registerServiceWorker";
 const httpLink = new HttpLink({
   uri: "https://api.github.com/graphql",
   headers: {
-    authorization: "bearer github-token-goes-here"
+    authorization: `bearer ${key}`
   }
 });
 
