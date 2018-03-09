@@ -11,7 +11,7 @@ cd data
 touch f1.js
 ```
 
-and then put this line of code in the file...
+and then put this line of code in the file **f1.js** you just created...
 
 ```
 export const key = 'github-auth-token-goes-here'
